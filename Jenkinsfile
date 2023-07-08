@@ -3,7 +3,7 @@ pipeline {
 
   environment {
        imagename = "jesmmet1doc/docker-repo"
-       registryCredential = 'DockerHub'
+       registryCredential = 'dockerhub'
        dockerImage = ''
            }
 
@@ -32,7 +32,7 @@ pipeline {
                       }
                 }
 
-     stage('Push Docker Image to DockerHub') {
+     stage('Push Docker Image to dockerhub') {
            steps{
                script {
                     docker.withRegistry( '', registryCredential ) {
