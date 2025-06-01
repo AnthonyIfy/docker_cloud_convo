@@ -3,7 +3,7 @@ pipeline {
 
   environment {
        imagename = "jesmmet1doc/doc-project"
-       registryCredential = 'DockerHub'
+       registryCredential = 'Dockerpass'
        dockerImage = ''
            }
 
